@@ -1,12 +1,12 @@
-### New York Giants Passing Report (2025 Season)
+# New York Giants Passing Report (2025 Season)
 Key Question: What is the New York Giants passing offense composed of? How (if at all) does it reflect the growth of rookie quarterback Jaxson Dart? Has it changed significantly throughout the season, and if so why?
 
-# Tools Used and Methods
+## Tools Used and Methods
 To complete this project, I utilized a Python script (seen in this repository) and made use of the nflreadpy Python libary. From this library I obtained play-by-play data from all the games in the 2025 NFL season. I also used the Pandas libary to filter the data to only the NY Giants offensive plays, to only their pass plays of the season, and finally to only the pass plays by rookie quarterback Jaxson Dart. After searching through the data I discovered there were some anomalies with two-point conversion plays and thus filtered them out.
 
 I then produced many relevant summary metrics for Dart's passing performance, including computing a proxy value for play action passes, a passing completion percentage, as well as sorting each pass into bins based on the location to which Dart threw (left, middle, or right) and based on how far the pass traveled in the air. I also computed the number of passes thrown in each week, which will be used for later visualizations. I cleaned the data and exported it as a CSV to Tableau, where I created the following visualizations. I also created similar visualizations using the matplotlib library.
 
-# Figure 1: Passes by Location and Air Yards
+## Figure 1: Passes by Location and Air Yards
 
 [![Passes by Location Dashboard](images/PassLocations.png)](https://public.tableau.com/views/JDartPassAnalysis/Dashboard3?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link)
 
@@ -16,7 +16,7 @@ This chart illustrates Dart's pass targets. The passes are separated into throws
 
 The large amount of passes behind the line of scrimmage and short passes may indicate a "West Coast" or quick-rhythm style offense relying heavily on high percentage passes. Throws to the left side of the field are often behind the line of scrimmage, and the highest percentage of behind the line of scrimmage passes are found here. This indicates a possible preference for screen passes or check downs to running backs in the flat on the left. The middle of the field is used primarily for short and intermediate length passes, suggesting passes to tight ends, slants, and dig routes.
 
-# Figure 2: Pass Distances Over Time
+## Figure 2: Pass Distances Over Time
 [![Pass Distances Dashboard](images/ThrowsOverTime.png)](https://public.tableau.com/views/JDartPassAnalysis/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 To explore the data and see the opponent, number of throws in each category, and more, please see the interactive dashboard published on Tableau Public: [Tableau Public](https://public.tableau.com/views/JDartPassAnalysis/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
@@ -29,7 +29,7 @@ Week 8 signified a turning point in the Giants offensive scheme. Cameron Skatteb
 
 In the second quarter of the Giants' Week 8 game against the Eagles, Cam Skattebo was injured and was ruled out for the season. This radically changed the New York offense, as it no longer had the presence of Skattebo to force the defense to commit to the line of scrimmage. This can be seen in the data for Week 9 against San Francisco, where every pass distance category dropped radically in usage except short passes. Dart no longer had the trusted back of Skattebo to pass to behind the line of scrimmage for screen plays or checkdowns and was similarly unable to find open receivers in the backfield, as the defense could safely ignore the line of scrimmage in favor of pass coverage. Prior to Week 9, the Giants had an average of 205.8 passing yards per game. In Week 9, this dropped almost 20 yards to 191 yards on 24 receptions out of 33 attempts (average of 8 yards per reception). This reinforces the above concepts and shows how the defense was able to lock down the backfield.
 
-# Figure 3: Pass Distances by Receiver
+## Figure 3: Pass Distances by Receiver
 [![Pass Distances by Receiver Dashboard](images/PassesByReceiver.png)](https://public.tableau.com/views/JDartPassAnalysis/Dashboard2?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 To explore the data and see pass amounts and opponents, please see the interactive dashboard published on Tableau Public: [Tableau Public](https://public.tableau.com/views/JDartPassAnalysis/Dashboard2?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)

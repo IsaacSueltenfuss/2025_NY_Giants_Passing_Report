@@ -1,0 +1,33 @@
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Conda/Venv Environment folders
+pass_report/
+venv/
+.venv/
+env/
+.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# IDE and Editor configuration files
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Data files
+*.csv
+*.xlsx
+
+!data/giants_blocking_analysis.csv
+
+*.ini
+*.env
+secrets.toml
